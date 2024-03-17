@@ -16,7 +16,7 @@ CLR_BLD_BLU=$CLR_RST$CLR_BLD$(tput setaf 4) #  blue, bold
 CLR_BLD_CYA=$CLR_RST$CLR_BLD$(tput setaf 6) #  cyan, bold
 
 # Set defaults
-BUILD_TYPE="userdebug"
+BUILD_TYPE="user"
 
 function checkExit () {
     EXIT_CODE=$?
@@ -84,7 +84,7 @@ if [ $# -eq 0 ]; then
     showHelpAndExit
 fi
 export DEVICE="$1"; shift
-export FILE_NAME_TAG=eng.nobody
+export FILE_NAME_TAG=Private.Ghost
 
 # Make sure we are running on 64-bit before carrying on with anything
 ARCH=$(uname -m | sed 's/x86_//;s/i[3-6]86/32/')
