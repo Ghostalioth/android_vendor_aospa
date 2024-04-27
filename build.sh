@@ -110,8 +110,8 @@ if [ $AOSPA_VARIANT ]; then
         export AOSPA_BUILDTYPE=STABLE
     elif [ "${AOSPA_VARIANT}" = "beta" ]; then
         export AOSPA_BUILDTYPE=BETA
-    elif [ "${AOSPA_VARIANT}" = "alpha" ]; then
-        export AOSPA_BUILDTYPE=ALPHA
+    elif [ "${AOSPA_VARIANT}" = "private" ]; then
+        export AOSPA_BUILDTYPE=PRIVATE
     else
         echo -e "${CLR_BLD_RED} Unknown AOSPA variant - use alpha, beta or stable${CLR_RST}"
         exit 1
