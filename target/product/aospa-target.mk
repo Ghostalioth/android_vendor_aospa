@@ -35,6 +35,10 @@ PRODUCT_PACKAGES += \
 # OmniJaws
 PRODUCT_PACKAGES += \
     OmniJaws
+    
+# OmniStyle
+PRODUCT_PACKAGES += \
+    OmniStyle
 
 # APNs
 ifneq ($(TARGET_NO_TELEPHONY), true)
